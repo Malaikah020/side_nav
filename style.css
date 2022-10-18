@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* .tit{
+    color:#bf5ce3;
+} */
+.header{
+    width: 100%;
+    height: 100vh;
+    background: #eed7ff;
+    
+}
+.logo{
+    color: rgb(255, 255, 255);
+}
+/* side navigation to make pretty */
+.side-nav{
+    width: 250px;
+    height: 100%;
+    background: #bf5ce3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+
+.side-nav a{
+   display: block;
+   margin-bottom: 20px;
+   align-items: center; 
+}
+
+.logo-img{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-links{
+    list-style: none;
+    position: relative;
+}
+
+.nav-link li{
+    padding: 10px 0
+}
+
+.nav-links li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.active{
+    background-color: #fcfdfc;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255, 255, 0.4, alpha);
+    display: none;
+    transition: top 0.5s;
+
+}
+.nav-links li:hover a{
+    color: #ac9cfc;
+    transition: 0.3s;
+}
+/* .nav-links li:hover ~ .active{
+    display: block;
+} */
+/*
+.nav-links li:nth-child(1):hover~ .active{
+    top: -20%;
+}
+.nav-links li:nth-child(2):hover~ .active{
+    top: 0.8%;
+}
+.nav-links li:nth-child(3):hover~ .active{
+    top: 35.8%;
+}
+.nav-links li:nth-child(4):hover~ .active{
+    top: 52.4%;
+}
+.nav-links li:nth-child(5):hover~ .active{
+    
+}
+.nav-links li:nth-child(6):hover~ .active{
+    top: 60.6%; 
+} */
+
+@media only screen and (max-width: 600px){
+    .side-nav{
+        width: 110px;
+    } 
+}
